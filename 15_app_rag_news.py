@@ -139,7 +139,7 @@ def main():
     if "retriever" not in st.session_state:
         st.session_state.retriever = build_ensemble_retriever(texts, metadatas)
     if "pipe" not in st.session_state:
-        st.session_state.pipe = load_local_pipeline("42dot/42dot_LLM-SFT-1.3B")
+        st.session_state.pipe = load_local_pipeline("Qwen/Qwen2.5-1.5B-Instruct") # Qwen/Qwen2.5-1.5B-Instruct, TinyLlama/TinyLlama-1.1B-Chat-v1.0, 42dot/42dot_LLM-SFT-1.3B
 
     # 9-2) 채팅 세션 상태 초기화
     if "messages" not in st.session_state:
