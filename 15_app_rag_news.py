@@ -8,7 +8,7 @@ from langchain_community.retrievers import BM25Retriever
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.retrievers import EnsembleRetriever
-from langchain_openai import ChatOpenAI  # ✅ OpenAI LLM
+from langchain_openai import ChatOpenAI  
 
 # 2) DB 경로/테이블 설정 ----------------------------------------------------------
 DB_PATH = "company_news.db"
